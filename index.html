@@ -4,10 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- tailwind setup -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <title>web developer portfolio</title>
 </head>
 <body>
-  
+  <!-- navbar & banner section -->
+<div class="bg-[#FFF8F3] px-6 md:px-10 lg:px-0">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Navbar -->
+    <div class="flex justify-between items-center py-8">
+      <!-- Logo -->
+      <h1 class="text-4xl font-bold">Sif<span class="text-[#FD6E0A]">a</span>t</h1>
+      
+      <!-- Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-gray-700 font-medium">
+        <a href="#portfolio" class="hover:text-[#FD6E0A]">Portfolio</a>
+        <a href="#blog" class="hover:text-[#FD6E0A]">Blog</a>
+        <button class="px-6 py-3 bg-[#FD6E0A] text-white text-lg rounded-md hover:bg-[#e65c00]"> Hire Me
+        </button>
+      </nav>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="flex flex-col-reverse md:flex-row items-center justify-between py-12 gap-10">
+      
+      <!-- left side text -->
+      <div class="space-y-6 text-center md:text-left max-w-xl">
+        <h2 class="text-xl text-gray-700">Hi, I am</h2>
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Iftakher Hossen</h1>
+        <p class="text-gray-600 max-w-xl">A passionate web developer crafting beautiful and responsive websites.
+    Always eager to learn new technologies and improve skills.</p>
+       <!-- Button -->
+        <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+          <button class="px-6 py-3 bg-[#FD6E0A] text-white text-lg rounded-md hover:bg-[#e65c00]">
+          <i class="fa-solid fa-download"></i> Download CV</button>
+          <button class="px-6 py-3 border-2 border-[#FD6E0A] text-[#FD6E0A] text-lg rounded-md hover:bg-[#FD6E0A] hover:text-white"><i class="fa-solid fa-envelope"></i> Contact</button>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="w-64 md:w-96">
+        <img src="/assets/image.png" alt="" class="rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
